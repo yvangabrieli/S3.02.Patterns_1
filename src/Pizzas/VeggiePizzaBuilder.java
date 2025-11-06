@@ -19,7 +19,7 @@ public class VeggiePizzaBuilder implements PizzaBuilder {
         pizza.setToppings("Tomato sauce");
         pizza.setToppings("Mozzarella Cheese");
         pizza.setToppings("Aubergine");
-        pizza.setToppings("Mushroom");
+        pizza.setToppings("Mushrooms");
         pizza.setToppings("Black Olives");
     }
 
