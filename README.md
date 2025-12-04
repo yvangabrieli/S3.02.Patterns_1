@@ -9,9 +9,9 @@ The goal was to **separate the construction process from the representation**, a
 
 ## ⚙️ Functionalities
 
-**Main features implemented:**
+**main.java.Main features implemented:**
 - Build pizzas step by step (size, dough, toppings).  
-- Use a **Director (PizzaChef)** to manage the construction process.  
+- Use a **Director (main.java.PizzaChef)** to manage the construction process.  
 - Create multiple pizza types using distinct builders:
   - **HawaiianPizzaBuilder**
   - **FourCheesePizzaBuilder**
@@ -22,8 +22,8 @@ The goal was to **separate the construction process from the representation**, a
 1. **Pizza.java** – The product with properties: size, dough, toppings.  
 2. **PizzaBuilder.java** – Interface defining pizza-building steps.  
 3. **Concrete Builders** – Implement specific pizza recipes.  
-4. **PizzaChef.java** – The director controlling the construction order.  
-5. **Main.java** – Demonstrates the pizza creation process.
+4. **main.java.PizzaChef.java** – The director controlling the construction order.  
+5. **main.java.Main.java** – Demonstrates the pizza creation process.
 
 ---
 
