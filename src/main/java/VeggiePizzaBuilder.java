@@ -7,11 +7,15 @@ public class VeggiePizzaBuilder implements PizzaBuilder {
         this.pizza = new Pizza();
     }
 
-    public void setSize() {
+    public void addName() {
+        pizza.setName("Veggie ");
+    }
+
+    public void addSize() {
         pizza.setSize("Large");
     }
 
-    public void setDough() {
+    public void addDough() {
         pizza.setDough("Thin crust");
     }
 
@@ -22,7 +26,6 @@ public class VeggiePizzaBuilder implements PizzaBuilder {
         pizza.setToppings("Mushrooms");
         pizza.setToppings("Black Olives");
     }
-
 
     public Pizza getPizza() {
         return pizza;
