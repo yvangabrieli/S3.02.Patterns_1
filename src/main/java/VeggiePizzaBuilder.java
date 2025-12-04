@@ -1,5 +1,3 @@
-package Pizzas;
-
 public class VeggiePizzaBuilder implements PizzaBuilder {
     private Pizza pizza;
 

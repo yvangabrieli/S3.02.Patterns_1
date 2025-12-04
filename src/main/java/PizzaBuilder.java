@@ -1,9 +1,8 @@
-package Pizzas;
-
 public interface PizzaBuilder {
-    public void setSize();
+    public void addName();
+    public void addSize();
 
-    public void setDough();
+    public void addDough();
 
     public void addTopping();
 
