@@ -1,5 +1,3 @@
-package Pizzas;
-
 public class FourCheesePizzaBuilder implements PizzaBuilder {
     private Pizza pizza;
 
@@ -7,11 +5,15 @@ public class FourCheesePizzaBuilder implements PizzaBuilder {
         this.pizza = new Pizza();
     }
 
-    public void setSize() {
+    public void addName() {
+        pizza.setName("Four Cheese ");
+    }
+
+    public void addSize() {
         pizza.setSize("Small");
     }
 
-    public void setDough() {
+    public void addDough() {
         pizza.setDough("Thick crust");
     }
 
@@ -27,4 +29,5 @@ public class FourCheesePizzaBuilder implements PizzaBuilder {
     public Pizza getPizza() {
         return pizza;
     }
+
 }
