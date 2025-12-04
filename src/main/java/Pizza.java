@@ -1,8 +1,9 @@
-package Pizzas;
-
+import java.util.List;
+import java.util.Objects;
 import java.util.ArrayList;
 
 public class Pizza {
+    private String name;
     private String size;
     private String dough;
     private ArrayList<String> toppings;
@@ -10,6 +11,14 @@ public class Pizza {
     public Pizza() {
         this.toppings = new ArrayList<>();
 
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = Objects.requireNonNull(name, "The name cannot be null");
     }
 
     public String getSize() {
@@ -47,6 +56,6 @@ public class Pizza {
 
     @Override
     public String toString() {
-        return "Pizza with: \n-size: " + getSize() + " \n-dough: " + getDough() + "\n-Topping: " + getToppings();
+        return this.name + "Pizza with: \n-size: " + getSize() + " \n-dough: " + getDough() + "\n-Topping: " + getToppings();
     }
 }
